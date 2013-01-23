@@ -1,0 +1,9 @@
+[submodule "vendor/src/github.com/cespare/blackfriday"]
+	path = vendor/src/github.com/cespare/blackfriday
+	url = git://github.com/cespare/blackfriday.git
+[submodule "vendor/src/github.com/cespare/go-apachelog"]
+	path = vendor/src/github.com/cespare/go-apachelog
+	url = git://github.com/cespare/go-apachelog.git
+[submodule "vendor/src/github.com/gorilla/pat"]
+	path = vendor/src/github.com/gorilla/pat
+	url = git://github.com/gorilla/pat.git
