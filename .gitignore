@@ -1,0 +1,8 @@
+/public/compiled/
+/prat
+# Using npm-shrinkwrap
+/node_modules
+
+# glp
+/vendor/bin
+/vendor/pkg

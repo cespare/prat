@@ -1,0 +1,23 @@
+{
+  "name": "prat",
+  "version": "1.0.0",
+  "dependencies": {
+    "stylus": {
+      "version": "0.32.0",
+      "dependencies": {
+        "cssom": {
+          "version": "0.2.5"
+        },
+        "mkdirp": {
+          "version": "0.3.4"
+        },
+        "debug": {
+          "version": "0.7.0"
+        }
+      }
+    },
+    "nib": {
+      "version": "0.9.1"
+    }
+  }
+}
