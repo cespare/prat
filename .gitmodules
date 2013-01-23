@@ -7,3 +7,9 @@
 [submodule "vendor/src/github.com/gorilla/pat"]
 	path = vendor/src/github.com/gorilla/pat
 	url = git://github.com/gorilla/pat.git
+[submodule "vendor/src/github.com/gorilla/mux"]
+	path = vendor/src/github.com/gorilla/mux
+	url = git://github.com/gorilla/mux.git
+[submodule "vendor/src/github.com/gorilla/context"]
+	path = vendor/src/github.com/gorilla/context
+	url = git://github.com/gorilla/context.git

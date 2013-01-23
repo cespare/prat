@@ -35,15 +35,15 @@ namespace :build do
   end
 
   desc "Build js dependencies."
-  task :coffee, :file do |t, *args|
+  task :coffee, :file do |t, arg|
     puts "Building coffeescript."
-    if args.empty?
-      files = FileList["coffee/*.coffee"]
+    if arg.is_a? String
+      files = [arg]
     else
-      files = args
+      files = FileList["coffee/*.coffee"]
     end
     files.each do |file|
-      output_name = File.join("public/compiled", File.basename(file).gsub(/\.coffee$/, ".js"))
+      output_name = File.join("static/compiled", File.basename(file).gsub(/\.coffee$/, ".js"))
       File.open(output_name, "w") { |f| f.write CoffeeScript.compile(File.read(file)) }
     end
   end
@@ -58,7 +58,7 @@ namespace :build do
     spawn_and_raise(
       *%w{./node_modules/stylus/bin/stylus --include node_modules/nib/lib},
       :in => "stylus/#{input_file}",
-      :out => "public/compiled/#{output_file}"
+      :out => "static/compiled/#{output_file}"
     )
   end
 end
